@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>About Page</h2>
+    <h2>{{page_title}}</h2>
     <p>
         During the Great Calamity, a small Guardian awakens within Hyrule Castle, caused by Zelda's power awakening. Seeing the
         destruction being caused, it escapes through a time portal, followed unbeknownst by a portion of Calamity Ganon's
@@ -11,43 +11,45 @@
         Goron, Urbosa of the desert-dwelling Gerudo, and Revali of the birdlike Rito.
     </p>
 
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h3>Link</h3>
-            <p>
-                A skilled swordsman serving the royal family of Hyrule. Born to a line of imperial guards, he is renowned for his
-                fighting skills and courage.
-            </p>
-        </div>
-        <div class="col-md-5">
-            <img src="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-23-15-46/HW_Characters_13.jpg" alt="Link">
-        </div>
-    </div>
+    {% for member in characters %}
 
-    <div class="row featurette">
-        <div class="col-md-5">
-            <img src="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-23-15-46/HW_Characters_11.jpg" alt="Zelda">
-        </div>
-        <div class="col-md-7">
-            <h3>Zelda</h3>
-            <p>
-                The Princess of Hyrule, in whose veins flows the blood of the goddess. She is devoted to researching ancient technology
-                and awakening her sacred power.
-            </p>
-        </div>
-    </div>
+        {% if loop.index % 2 != 0 %}
 
-    <div class="row featurette">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h3><a href="/about/{{member.url}}">{{loop.index}}. {{member.name}}</a></h3>
+                    <p>
+                        {{member.description}}
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="{{member.image_source}}" alt="" class="featurette-image image-responsive">
+                </div>
+            </div>
+
+        {% else %}
+
+            <div class="row featurette">                
+                <div class="col-md-5">
+                    <img src="{{member.image_source}}" alt="" class="featurette-image image-responsive">
+                </div>
+                <div class="col-md-7">
+                    <h3><a href="/about/{{member.url}}">{{loop.index}}. {{member.name}}</a></h3>
+                    <p>
+                        {{member.description}}
+                    </p>
+                </div>
+            </div>
         
-        <div class="col-md-7">
-            <h3>Impa</h3>
-            <p>
-                The adviser to Hyrule's royal family and a revered member of the sheikah tribe. She is dedicated to her work and known
-                for being steadfast and diligent. She can be distractible at times.
-            </p>
-        </div>
-        <div class="col-md-5">
-            <img src="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-23-15-46/HW_Characters_12.jpg" alt="Impa">
-        </div>
-    </div>
+        {% endif %}
+
+        {% if loop.index != loop.length %}
+
+            <hr class="featurette-divider">
+
+        {% endif %}
+
+    {% endfor %}
+
+
 {% endblock %}

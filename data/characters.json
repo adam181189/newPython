@@ -1,0 +1,44 @@
+[
+    {
+        "name":"Link",
+        "description":"A skilled swordsman serving the royal family of Hyrule. Born to a line of imperial guards, he is renowned for his fighting skills and courage.",
+        "image_source":"https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-23-15-46/HW_Characters_13.jpg",
+        "url": "link"
+    },
+    {
+        "name":"Zelda",
+        "description":"The Princess of Hyrule, in whose veins flows the blood of the goddess. She is devoted to researching ancient technology and awakening her sacred power.",
+        "image_source":"https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-23-15-46/HW_Characters_11.jpg",
+        "url": "zelda"
+    },
+    {
+        "name":"Impa",
+        "description":"The adviser to Hyrule's royal family and a revered member of the sheikah tribe. She is dedicated to her work and known for being steadfast and diligent. She can be distractible at times.",
+        "image_source":"https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-23-15-46/HW_Characters_12.jpg",
+        "url": "impa"
+    },
+    {
+        "name":"Mipha",
+        "description":"The princess of the Zora, who possesses an incredible healing power. She was childhood friends with Link. Now, she is entusted with piloting Divine Beast Vah Ruta.",
+        "image_source":"https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-23-15-46/HW_Characters_3.jpg",
+        "url": "mipha"
+    },
+    {
+        "name":"Ravali",
+        "description":"A gifted archer who has mastered an aerial move previously though impossible. While boastful, he has the skills to back up his claims. Now, he is entursted with piloting Divine Beast Vah Medoh",
+        "image_source":"https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-23-15-46/HW_Characters_2.jpg",
+        "url": "ravali"
+    },
+    {
+        "name":"Daruk",
+        "description":"A Goron warrior who possesses the power to deflect attacks. He cares deeply for his fellow Gorons. Now, he is entrusted with piloting Divine Beast Vah Rudania.",
+        "image_source":"https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-23-15-46/HW_Characters_4.jpg",
+        "url": "daruk"
+    },
+    {
+        "name":"Urbosa",
+        "description":"The chief of the Gerudo who possesses the power to command lightning itself. Now, she is entrusted with piloting Divine Beast Vah Naboris.",
+        "image_source":"https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-11-23-15-46/HW_Characters_1.jpg",
+        "url": "urbosa"
+    }
+]
